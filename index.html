@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMK Tugas 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo">
+                Saul <span>Goodman</span>
+            </a>
+            <div class="toggle"></div>    
+        </header>
+        <img src="image/saul.png" alt="saul" class="saul">
+        <div class="content">
+            <div class="contentBx">
+                <h4>Hello,</h4>
+                <h2>I'm <span>Saul Goodman</span></h2>
+                <h3>Lawyer</h3>
+                <p>Hey, do you know you have rights? constitution says you do
+                    and so do i.
+                </p>
+                <a href="#" id="hire-me-btn">Hire me</a>
+            </div>
+            </div>
+            <ul class="sci">
+                <li><a href="#"><img src="image/facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="image/twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="image/instagram.png" alt=""></a></li>
+            </ul>
+            <img src="image/walter.png" alt="" class="walter">
+    </section>
+    <script>
+        let banner = document.querySelector('.banner');
+        let menutoggle = document.querySelector('.toggle');
+        let hireMeBtn = document.getElementById('hire-me-btn');
+        menutoggle.onclick = function(){
+            menutoggle.classList.toggle('active');
+            banner.classList.toggle('active');
+        }
+
+        hireMeBtn.addEventListener('click', function() {
+            banner.classList.add('active');
+            menutoggle.classList.add('active');
+        });
+    </script>
+</body>
+</html>
