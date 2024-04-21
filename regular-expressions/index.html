@@ -7,37 +7,56 @@
     <title>Tugas Regex</title>
   </head>
   <body class="bg-purple-300">
-      <div class="container mx-auto py-40">
-        <div class="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
-          <div class="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-center" style="background-image: url('img/profil.jpg');">
-            <h1 class="text-white text-3xl mb-3">Welcome</h1>
-          </div>
-          <div class="w-full lg:w-1/2 py-16 px-12">
-            <h2  class="text-3xl mb-4">Regular Expressions</h2>
-            <form>
-                <div class="relative w-full">
-                    <input id="regexInput1" type="text" name="anime" placeholder="Apa nama Anime Favoritmu" value="" class="relative w-full h-12 px-4 placeholder-transparent transition-all border rounded outline-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white focus:border-blue-500" />
-                    <label for="regexInput1" id="regex" class="cursor-text peer-focus:cursor-default peer-autofill:-top-2 absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:rounded before:bordered before:border-blue-500 before:transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-focus:-top-2 peer-focus:text-xs peer-focus:text-blue-500 "> Apa nama Anime favoritmu</label>
-                    <small class="absolute flex justify-between w-full px-4 py-1 text-xs transition">
-                        <span id="input1-validation" class="text-slate-400">Validation message</span>
-                    </small>
-                </div>	
-              <div class="mt-5">
-                <input type="text" placeholder="Email" class="border border-gray-400 py-1 px-2 w-full">
-              </div>
-              <div class="mt-5">
-                <input type="password" placeholder="Password" class="border border-gray-400 py-1 px-2 w-full">
-              </div>
-              <div class="mt-5">
-                <input type="password" placeholder="Confirm Password" class="border border-gray-400 py-1 px-2 w-full">
-              </div>
-              <div class="mt-5">
-                <button class="w-full bg-purple-500 py-3 text-center text-white">Gaskeun</button>
-              </div>
-            </form>
-          </div>
+    <div class="container mx-auto py-40">
+      <div class="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
+        <div class="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-center" style="background-image: url('img/gunung.jpg');">
+          <h1 class="text-white text-3xl mb-3">Welcome</h1>
+        </div>
+        <div class="w-full lg:w-1/2 py-16 px-12">
+          <h2 class="text-3xl mb-4">Regular Expressions</h2>
+          <form>
+            <div class="relative w-full mt-">
+              <input id="regexInput1" type="text" name="anime" placeholder="Apa nama Anime Favoritmu" value="" class="relative w-full h-12 px-4 placeholder-transparent transition-all border rounded outline-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white focus:border-blue-500" />
+              <label for="regexInput1" id="animeh-input1" class="cursor-text peer-focus:cursor-default peer-autofill:-top-2 absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:rounded before:bordered before:border-blue-500 before:transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-focus:-top-2 peer-focus:text-xs peer-focus:text-blue-500 "> Apa nama Anime favoritmu</label>
+              <small class="relative flex justify-between w-full px-4 py-1 text-xs transition">
+                <span id="input1-validation" class="text-slate-400">Validation message</span>
+              </small>
+            </div>
+            <div class="relative w-full mt-5">
+              <input id="regexInput2" type="text" name="nomortelepon" placeholder="Masukkan nomor telepon dengan region indonesia" value="" class="relative w-full h-12 px-4 placeholder-transparent transition-all border rounded outline-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white focus:border-blue-500" />
+              <label for="regexInput2" id="NIM-input2" class="cursor-text peer-focus:cursor-default peer-autofill:-top-2 absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:rounded before:bordered before:border-blue-500 before:transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-focus:-top-2 peer-focus:text-xs peer-focus:text-blue-500 "> Masukkan nomor telepon dengan region indonesia</label>
+              <small class="relative flex justify-between w-full px-4 py-1 text-xs transition">
+                <span id="input2-validation" class="text-slate-400">Validation message</span>
+              </small>
+            </div>
+            <div class="relative w-full mt-5">
+              <input id="regexInput3" type="text" name="pos" placeholder="Masukkan kode Pos" value="" class="relative w-full h-12 px-4 placeholder-transparent transition-all border rounded outline-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white focus:border-blue-500" />
+              <label for="regexInput3" id="pos-input3" class="cursor-text peer-focus:cursor-default peer-autofill:-top-2 absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:rounded before:bordered before:border-blue-500 before:transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-focus:-top-2 peer-focus:text-xs peer-focus:text-blue-500 "> Masukkan kode pos</label>
+              <small class="relative flex justify-between w-full px-4 py-1 text-xs transition">
+                <span id="input3-validation" class="text-slate-400">Validation message</span>
+              </small>
+            </div>
+            <div class="relative w-full mt-5">
+              <input id="regexInput4" type="text" name="nickname" placeholder="Masukkan nickname (tidak boleh ada spasi minimal 6 karakter)" value="" class="relative w-full h-12 px-4 placeholder-transparent transition-all border rounded outline-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white focus:border-blue-500" />
+              <label for="regexInput4" id="nickname-input4" class="cursor-text peer-focus:cursor-default peer-autofill:-top-2 absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:rounded before:bordered before:border-blue-500 before:transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-focus:-top-2 peer-focus:text-xs peer-focus:text-blue-500 "> Masukkan nickname</label>
+              <small class="relative flex justify-between w-full px-4 py-1 text-xs transition">
+                <span id="input4-validation" class="text-slate-400">Validation message</span>
+              </small>
+            </div>
+            <div class="relative w-full mt-5">
+              <input id="regexInput5" type="text" name="agama" placeholder="Tuliskan NIM dengan format USU" value="" class="relative w-full h-12 px-4 placeholder-transparent transition-all border rounded outline-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white focus:border-blue-500" />
+              <label for="regexInput5" id="agama-input5" class="cursor-text peer-focus:cursor-default peer-autofill:-top-2 absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:rounded before:bordered before:border-blue-500 before:transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base peer-focus:-top-2 peer-focus:text-xs peer-focus:text-blue-500 "> Apa agamamu?</label>
+              <small class="relative flex justify-between w-full px-4 py-1 text-xs transition">
+                <span id="input5-validation" class="text-slate-400">Validation message</span>
+              </small>
+            </div>
+            <div class="mt-5">
+              <button class="w-full bg-purple-500 py-3 text-center text-white">Gaskeun</button>
+            </div>
+          </form>
         </div>
       </div>
-      <script src="regex.js"></script>
+    </div>
+    <script src="regex.js"></script>
   </body>
 </html>
